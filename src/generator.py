@@ -1,939 +1,344 @@
 #! usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Imports
-from textgenrnn import textgenrnn   # https://github.com/minimaxir/textgenrnn
+# IMPORTS ---------------------------------------------------------------------#
 import praw                         # https://praw.readthedocs.io/en/latest/
+import prawcore                     # https://pypi.org/project/prawcore/
 import twitter                      # https://developer.twitter.com/en/docs.html
 import wikiquotes                   # https://pypi.org/project/wikiquotes/
 import imdb                         # https://media.readthedocs.org/pdf/imdbpy/latest/imdbpy.pdf
+
+from textgenrnn import textgenrnn   # https://github.com/minimaxir/textgenrnn
 from tqdm import tqdm               # https://github.com/tqdm/tqdm
+from keras import backend as k
+from shutil import copyfile
+
+import cli
 import config
 import sys
-
-
-# Just disables the warning, doesn't enable AVX/FMA
 import os
+import os.path
+#------------------------------------------------------------------------------#
+
+
+# MISC ------------------------------------------------------------------------#
+# Disables the warning (doesn't enable AVX/FMA)
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-# Text generator (reset)
+# Reset textgenrnn
 textgen = textgenrnn()
 textgen.reset()
 
+# Styling in CLI
 class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
+    HEADER = '\033[96m'
+    INFO = '\033[7m'
     OKGREEN = '\033[92m'
+    OKBLUE = '\033[94m'
     WARNING = '\033[93m'
     FAIL = '\033[91m'
     BOLD = '\033[1m'
+    ITALIC = '\033[3m'
     UNDERLINE = '\033[4m'
     END = '\033[0m'
 
-
-#===================================== MENU ===================================#
-print(bcolors.HEADER
-      + 'What do you want to generate?'
-      + bcolors.END)
-print(bcolors.HEADER
-      + ' ❶  '
-      + bcolors.END
-      + bcolors.BOLD
-      + 'Reddit posts titles'
-      + bcolors.END)
-print(bcolors.HEADER
-      + ' ❷  '
-      + bcolors.END
-      + bcolors.BOLD
-      + 'Tweets'
-      + bcolors.END)
-print(bcolors.HEADER
-      + ' ❸  '
-      + bcolors.END
-      + bcolors.BOLD
-      + 'Quotes'
-      + bcolors.END)
-print(bcolors.HEADER
-      + ' ❹  '
-      + bcolors.END
-      + bcolors.BOLD
-      + 'Movies titles'
-      + bcolors.END)
-print(bcolors.HEADER
-      + ' ❺  '
-      + bcolors.END
-      + bcolors.BOLD
-      + 'Other (use a local file)'
-      + bcolors.END)
-#==============================================================================#
+success_logo = '[' + bcolors.OKGREEN + 'o' + bcolors.END + ']' + ' '
+warning_logo = '[' + bcolors.WARNING + '!' + bcolors.END + ']' + ' '
+fail_logo = '[' + bcolors.FAIL + 'x' + bcolors.END + ']' + ' '
+info_logo = '[' + bcolors.OKBLUE + '-' + bcolors.END + ']' + ' '
+#------------------------------------------------------------------------------#
 
 
-#=================================  GENERATOR =================================#
-# Ask for user's choice
-try:
-    choice = input(bcolors.HEADER
-                   + '> '
-                   + bcolors.END)
-    choice = int(choice)
-except KeyboardInterrupt:
-    print(' → '
-          + bcolors.FAIL
-          + 'Interrupted'
-          + bcolors.END)
-    exit(0)
+# CORE ------------------------------------------------------------------------#
+# Q : What do you want to generate?
+what_q = 'Select what kind of text you want to generate'
+what_c = ['Reddit posts titles',
+          'Tweets',
+          'Quotes',
+          'Movies titles',
+          'Other (use a local file)']
+what_a = cli.selection_menu(what_q, what_c)
+what_type = what_a.get('choice')
 
-#----------------------------------- REDDIT -----------------------------------#
-if choice == 1:
 
-        # API / authentication
-        reddit = praw.Reddit(client_id = config.reddit_client_id,
+if (what_type == what_c[0]): # Reddit posts titles have been chosen
+
+    # API / authentication
+    reddit_log = praw.Reddit(client_id = config.reddit_client_id,
                              client_secret = config.reddit_client_secret,
                              user_agent = config.reddit_user_agent,
                              username = config.reddit_username,
                              password = config.reddit_password)
 
+    cli.delete_last_lines(len(what_c) + 1)
 
-        # Get : subreddit's name
+    try:
+        print(info_logo
+              + "Logging in...")
+        reddit_log.user.me()
+    except prawcore.exceptions.ResponseException:
+        cli.delete_last_lines(1)
+        print(fail_logo
+              + "Can't log in to your Reddit account. Please double check your credentials and try again.")
+        k.clear_session()
+        sys.exit(1)
+
+    cli.delete_last_lines(1)
+    print(success_logo
+          + "Logged in")
+
+
+    # Q : Which subreddit?
+    while True:
         try:
-            subreddit_name = input(bcolors.HEADER
-                                   + 'From which subreddit?'
-                                   + '\n'
-                                   + '> '
-                                   + bcolors.END)
-            subreddit = reddit.subreddit(subreddit_name)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
+            subreddit_a = cli.type_answer_menu('Of which subreddit?',
+                                               'None')
+            subreddit_name = subreddit_a.get('answer')
+            file_name = '../results/reddit_' + subreddit_name + '.txt' # output file
+            print(info_logo
+                  + "Searching for the subreddit...")
+            reddit_log.subreddits.search_by_name(subreddit_name,
+                                                 exact = True)
+        except prawcore.exceptions.NotFound:
+            cli.delete_last_lines(1)
+            print(warning_logo
+                  + "This subreddit doesn't exist. Please try another one.")
+            continue
+        else:
+            cli.delete_last_lines(1)
+            subreddit = reddit_log.subreddit(subreddit_name)
+            print(success_logo
+                  + "Subreddit found")
+            break
 
+elif (what_type == what_c[1]): # Twitter has been chosen
 
-        # Get : number of epochs
-        try:
-            n_epochs = input(bcolors.HEADER
-                             + 'On a scale of 1 (fast but inaccurate) to 10 (effective but slow), which number would you choose?'
-                             + '\n'
-                             + '> '
-                             + bcolors.END)
-            n_epochs = int(n_epochs)
-            if n_epochs not in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-            if (n_epochs == 0):
-                number_epochs = 1
-            elif (n_epochs != 0):
-                number_epochs = n_epochs * 5
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : number of results
-        try:
-            n_results = input(bcolors.HEADER
-                              + 'How many results? (min is 1, max is 100)'
-                              + '\n'
-                              + '> '
-                              + bcolors.END)
-            n_results = int(n_results)
-
-            if (n_results < 1) or (n_results > 100):
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random Reddit posts titles from subreddit "https://www.reddit.com/r/'
-                  + subreddit_name
-                  + '/" using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-
-        # Get : prefix wanted
-        try:
-            prefix = input(bcolors.HEADER
-                           + 'Do you want a prefix? (Y/N)'
-                           + '\n'
-                           + '> '
-                           + bcolors.END)
-
-            if prefix.lower() not in ['y', 'n']:
-                print(bcolors.WARNING
-                      + 'Invalid answer!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            try:
-                prefix_name = input(bcolors.HEADER
-                                    + 'Which one? '
-                                    + '\n'
-                                    + '> '
-                                    + bcolors.END)
-
-            except KeyboardInterrupt:
-                print(' → '
-                      + bcolors.FAIL
-                      + 'Interrupted'
-                      + bcolors.END)
-                exit(0)
-
-
-        # Collecting data
-        print(bcolors.OKBLUE
-              + 'Collecting data...'
-              + bcolors.END)
-
-        posts_titles = subreddit.top(limit = 1000)
-
-        with open('../data/data.txt', 'w+') as f:
-            for submission in tqdm(posts_titles):
-                f.write(submission.title + '\n')
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random Reddit posts titles from subreddit "https://www.reddit.com/r/'
-                  + subreddit_name
-                  + '/" with prefix "'
-                  + prefix_name
-                  + '" using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file('../data/data.txt',
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results, prefix = prefix_name)
-
-
-        # Case : prefix is not wanted
-        elif (prefix.lower() == 'n'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random Reddit posts titles from subreddit "https://www.reddit.com/r/'
-                  + subreddit_name
-                  + ' using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file('../data/data.txt',
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results)
-
-        print(bcolors.OKBLUE
-              + '\n'
-              + 'Writing results to file...'
-              + '\n'
-              + bcolors.END)
-
-
-        # Print results in a file
-        file_name = '../results/subreddit_' + subreddit_name + '.txt'
-        textgen.generate_to_file(file_name, n = n_results)
-
-        print(bcolors.OKGREEN
-              + 'Results are located in file '
-              + bcolors.BOLD
-              + file_name
-              + bcolors.END)
-#------------------------------------------------------------------------------#
-
-#----------------------------------- TWITTER ----------------------------------#
-elif choice == 2:
-
-        # API / authentication
-        twitter = twitter.Api(consumer_key = config.twitter_consumer_key,
+    # API / authentication
+    twitter_log = twitter.Api(consumer_key = config.twitter_consumer_key,
                               consumer_secret = config.twitter_consumer_secret,
                               access_token_key = config.twitter_access_token_key,
                               access_token_secret = config.twitter_access_token_secret,
                               tweet_mode = 'extended')
 
+    cli.delete_last_lines(len(what_c) + 1)
 
-        # Get : username
-        try:
-            user_name = input(bcolors.HEADER
-                              + 'From which user? '
-                              + '\n'
-                              + '> '
-                              + bcolors.END)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : number of epochs
-        try:
-            n_epochs = input(bcolors.HEADER
-                             + 'On a scale of 1 (fast but inaccurate) to 10 (effective but slow), which number would you choose?'
-                             + '\n'
-                             + '> '
-                             + bcolors.END)
-            n_epochs = int(n_epochs)
-            if n_epochs not in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-            if (n_epochs == 0):
-                number_epochs = 1
-            elif (n_epochs != 0):
-                number_epochs = n_epochs * 5
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : number of results
-        try:
-            n_results = input(bcolors.HEADER
-                              + 'How many results? (min is 1, max is 100)'
-                              + '\n'
-                              + '> '
-                              + bcolors.END)
-            n_results = int(n_results)
-
-            if (n_results < 1) or (n_results > 100):
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : prefix wanted
-        try:
-            prefix = input(bcolors.HEADER
-                           + 'Do you want a prefix? (Y/N)'
-                           + '\n'
-                           + '> '
-                           + bcolors.END)
-
-            if prefix.lower() not in ['y', 'n']:
-                print(bcolors.WARNING
-                      + 'Invalid answer!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            try:
-                prefix_name = input(bcolors.HEADER
-                                    + 'Which one? '
-                                    + '\n'
-                                    + '> '
-                                    + bcolors.END)
-
-            except KeyboardInterrupt:
-                print(' → '
-                      + bcolors.FAIL
-                      + 'Interrupted'
-                      + bcolors.END)
-                exit(0)
-
-
-        # Collecting data
-        print(bcolors.OKBLUE
-              + 'Collecting data...'
-              + bcolors.END)
-
-        t = twitter.GetUserTimeline(screen_name = user_name,
-                                    count = 200)
-        tweets = [i.AsDict() for i in t]
-
-        with open('../data/data.txt', 'w+') as f:
-            for t in tqdm(tweets):
-                f.write(t['full_text'] + '\n')
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random tweets like user "https://twitter.com/'
-                  + user_name
-                  + '/" with prefix "'
-                  + prefix_name
-                  + '" using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file('../data/data.txt',
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results, prefix = prefix_name)
-
-
-        # Case : prefix is not wanted
-        elif (prefix.lower() == 'n'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random tweets like user "https://twitter.com/'
-                  + user_name
-                  + '/" using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file('../data/data.txt',
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results)
-
-        print(bcolors.OKBLUE
-              + '\n'
-              + 'Writing results to file...'
-              + '\n'
-              + bcolors.END)
-
-
-        # Print results in a file
-        file_name = '../results/tweets_' + user_name + '.txt'
-        textgen.generate_to_file(file_name, n = n_results)
-
-        print(bcolors.OKGREEN
-              + 'Results are located in file '
-              + bcolors.BOLD
-              + file_name
-              + bcolors.END)
-#------------------------------------------------------------------------------#
-
-#------------------------------------ QUOTES ----------------------------------#
-elif choice == 3:
-
-    # Get : name of the author
     try:
-        author_name = input(bcolors.HEADER
-                          + 'From which author? '
-                          + '\n'
-                          + '> '
-                          + bcolors.END)
-    except KeyboardInterrupt:
-        print(' → '
-              + bcolors.FAIL
-              + 'Interrupted'
-              + bcolors.END)
-        exit(0)
+        print(info_logo
+              + "Logging in...")
+        twitter_log.VerifyCredentials()
+    except twitter.error.TwitterError:
+        cli.delete_last_lines(1)
+        print(fail_logo
+              + "Can't log in to your Twitter account. Please double check your credentials and try again.")
+        k.clear_session()
+        sys.exit(1)
+
+    cli.delete_last_lines(1)
+    print(success_logo
+          + "Logged in")
 
 
-    # Get : number of epochs
-    try:
-        n_epochs = input(bcolors.HEADER
-                         + 'On a scale of 1 (fast but inaccurate) to 10 (effective but slow), which number would you choose?'
-                         + '\n'
-                         + '> '
-                         + bcolors.END)
-        n_epochs = int(n_epochs)
-        if n_epochs not in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-            print(bcolors.WARNING
-                  + 'Invalid number!'
-                  + bcolors.END)
-            exit(1)
-        if (n_epochs == 0):
-            number_epochs = 1
-        elif (n_epochs != 0):
-            number_epochs = n_epochs * 5
-    except KeyboardInterrupt:
-        print(' → '
-              + bcolors.FAIL
-              + 'Interrupted'
-              + bcolors.END)
-        exit(0)
-
-
-    # Get : number of results
-    try:
-        n_results = input(bcolors.HEADER
-                          + 'How many results? (min is 1, max is 100)'
-                          + '\n'
-                          + '> '
-                          + bcolors.END)
-        n_results = int(n_results)
-
-        if (n_results < 1) or (n_results > 100):
-            print(bcolors.WARNING
-                  + 'Invalid number!'
-                  + bcolors.END)
-            exit(1)
-    except KeyboardInterrupt:
-        print(' → '
-              + bcolors.FAIL
-              + 'Interrupted'
-              + bcolors.END)
-        exit(0)
-
-
-    # Get : prefix wanted
-    try:
-        prefix = input(bcolors.HEADER
-                       + 'Do you want a prefix? (Y/N)'
-                       + '\n'
-                       + '> '
-                       + bcolors.END)
-
-        if prefix.lower() not in ['y', 'n']:
-            print(bcolors.WARNING
-                  + 'Invalid answer!'
-                  + bcolors.END)
-            exit(1)
-    except KeyboardInterrupt:
-        print(' → '
-              + bcolors.FAIL
-              + 'Interrupted'
-              + bcolors.END)
-        exit(0)
-
-
-    # Case : prefix is wanted
-    if (prefix.lower() == 'y'):
+    # Q : Which user?
+    while True:
         try:
-            prefix_name = input(bcolors.HEADER
-                                + 'Which one?'
-                                + '\n'
-                                + '> '
-                                + bcolors.END)
+            user_a = cli.type_answer_menu('Of which user?',
+                                          'None')
+            user_name = user_a.get('answer')
+            file_name = '../results/twitter_' + user_name + '.txt' # output file
+            print(info_logo
+                  + "Searching for the user...")
+            twitter_log.GetUserTimeline(screen_name = user_name,
+                                        count = 1)
+        except twitter.error.TwitterError:
+            cli.delete_last_lines(1)
+            print(warning_logo
+                  + "This user doesn't exist. Please try another one.")
+            continue
+        else:
+            cli.delete_last_lines(1)
+            print(success_logo
+                  + "User found")
+            break
 
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
+
+elif (what_type == what_c[2]): # Quotes have been chosen
+
+    cli.delete_last_lines(len(what_c) + 1)
+
+    # Q : Which author?
+    while True:
+        author_a = cli.type_answer_menu('Of which author?',
+                                        'None')
+        author_name = author_a.get('answer')
+        file_name = '../results/quotes_' + author_name + '.txt' # output file
+        print(info_logo
+              + "Searching for the author...")
+        n_quotes = len(wikiquotes.get_quotes(author_name, 'english'))
+        if (n_quotes < 20):
+            cli.delete_last_lines(1)
+            print(warning_logo
+                  + "This author doesn't have enough quotes. Please try another one.")
+            continue
+        else:
+            cli.delete_last_lines(1)
+            print(success_logo
+                  + "Author found")
+            break
 
 
-    # Collecting data
-    print(bcolors.OKBLUE
-          + 'Collecting data...'
-          + bcolors.END)
+elif (what_type == what_c[3]): # Movies titles have been chosen
 
-    quotes = wikiquotes.get_quotes(author_name, "english")
+    cli.delete_last_lines(len(what_c) + 1)
 
+    file_name = '../results/movies_titles.txt' # output file
+
+
+elif (what_type == what_c[4]): # Local file has been chosen
+
+    cli.delete_last_lines(len(what_c) + 1)
+
+    # Q : What file?
+    while True:
+        file_a = cli.type_answer_menu('Enter the path of your file',
+                                      'None')
+        file_path = file_a.get('answer')
+        file_name = '../results/random_text_from_file_' + file_path + '.txt' # output file
+        print(info_logo
+              + "Searching for the file...")
+        file_exists = os.path.isfile(file_path)
+        if (file_exists == False):
+            cli.delete_last_lines(1)
+            print(warning_logo
+                  + "This file doesn't exist. Please try with another one.")
+            continue
+        else:
+            cli.delete_last_lines(1)
+            print(success_logo
+                  + "File found")
+            break
+
+
+# Q : Which performance?
+epochs_q = 'Select which performance you want'
+epochs_c = ['Very low (very fast processing but very imprecise results)',
+            'Low (fast processing but inaccurate results)',
+            'Medium (recommended)',
+            'High (accurate results but slow processing)',
+            'Very high (very precise results but extremely slow processing)']
+epochs_a = cli.selection_menu(epochs_q, epochs_c)
+epochs_aprox = epochs_a.get('choice')
+
+if (epochs_aprox == epochs_c[0]):
+    epochs_number = 1
+elif (epochs_aprox == epochs_c[1]):
+    epochs_number = 10
+elif (epochs_aprox == epochs_c[2]):
+    epochs_number = 20
+elif (epochs_aprox == epochs_c[3]):
+    epochs_number = 40
+elif (epochs_aprox == epochs_c[4]):
+    epochs_number = 80
+
+cli.delete_last_lines(len(epochs_c) + 1)
+
+
+# Q : How many results?
+results_q = 'Select the number of results you want'
+results_c = ['10',
+             '50',
+             '100']
+results_a = cli.selection_menu(results_q, results_c)
+results_aprox = results_a.get('choice')
+
+if (results_aprox == results_c[0]):
+    results_number = 10
+elif (results_aprox == results_c[1]):
+    results_number = 50
+elif (results_aprox == results_c[2]):
+    results_number = 100
+
+cli.delete_last_lines(len(results_c) + 1)
+
+
+# Q : Prefix or not?
+prefix_q = 'Do you want to set a prefix?'
+prefix_c = ['Yes',
+            'No']
+prefix_a = cli.selection_menu(prefix_q, prefix_c)
+prefix_bool = prefix_a.get('choice')
+
+cli.delete_last_lines(len(prefix_c) + 1)
+
+if (prefix_bool == prefix_c[0]):
+    prefix_a = cli.type_answer_menu('Which one?',
+                                    'None')
+    prefix_name = prefix_a.get('answer')
+
+
+# Collecting data
+print(info_logo
+      + 'Collecting data...')
+
+if (what_type == what_c[0]):
+    with open('../data/data.txt', 'w+') as f:
+        for submission in tqdm(subreddit.top(limit = 1000)):
+            f.write(submission.title + '\n')
+elif (what_type == what_c[1]):
+    t = twitter.GetUserTimeline(screen_name = user_name,
+                                count = 200)
+    tweets = [i.AsDict() for i in t]
+    with open('../data/data.txt', 'w+') as f:
+        for t in tqdm(tweets):
+            f.write(t['full_text'] + '\n')
+elif (what_type == what_c[2]):
+    quotes = wikiquotes.get_quotes(author_name, 'english')
     with open('../data/data.txt', 'w+') as f:
         for q in tqdm(quotes):
             f.write(q + '\n')
+elif (what_type == what_c[3]):
+    ia = imdb.IMDb()
+    movies = ia.get_top250_movies()
+    with open('../data/data.txt', 'w+') as f:
+        for i in tqdm(range(1, 250)):
+            f.write(movies[i]['title'] + '\n')
+elif (what_type == what_c[4]):
+    copyfile(file_path, '../data/data.txt')
+
+cli.delete_last_lines(1)
+print(success_logo
+      + "Data collected")
 
 
-    # Case : prefix is wanted
-    if (prefix.lower() == 'y'):
-        print(bcolors.OKBLUE
-              + 'Generating '
-              + str(n_results)
-              + ' random quotes like '
-              + author_name
-              + ' with prefix "'
-              + prefix_name
-              + '" using '
-              + str(number_epochs)
-              + ' epochs...'
-              + bcolors.END)
-
-        textgen.train_from_file('../data/data.txt',
-                                num_epochs = number_epochs)
-
-        textgen.generate(n_results, prefix = prefix_name)
+# Learning
+print(info_logo
+      + "Training...")
+textgen.train_from_file('../data/data.txt',
+                        num_epochs = epochs_number)
+cli.delete_last_lines(1)
+print(success_logo
+      + "Data trained")
 
 
-    # Case : prefix is not wanted
-    elif (prefix.lower() == 'n'):
-        print(bcolors.OKBLUE
-              + 'Generating '
-              + str(n_results)
-              + ' random quotes like '
-              + author_name
-              + ' using '
-              + str(number_epochs)
-              + ' epochs...'
-              + bcolors.END)
-
-        textgen.train_from_file('../data/data.txt',
-                                num_epochs = number_epochs)
-
-        textgen.generate(n_results)
-
-    print(bcolors.OKBLUE
-          + '\n'
-          + 'Writing results to file...'
-          + '\n'
-          + bcolors.END)
+# Generating results
+print(info_logo
+      + "Generating results...")
+if (prefix_bool == prefix_c[0]):
+    textgen.generate(n_results,
+                     prefix = prefix_name)
+elif (prefix_bool == prefix_c[1]):
+    textgen.generate(n_results)
+cli.delete_last_lines(1)
+print(success_logo
+      + "Results generated")
 
 
-    # Print results in a file
-    file_name = '../results/quotes_' + author_name + '.txt'
-    textgen.generate_to_file(file_name, n = n_results)
-
-    print(bcolors.OKGREEN
-          + 'Results are located in file '
-          + bcolors.BOLD
-          + file_name
-          + bcolors.END)
+# Writing results to a file
+print(info_logo
+      + "Writing to file...")
+textgen.generate_to_file(file_name, n = results_number)
+cli.delete_last_lines(1)
+print(success_logo
+      + "File "
+      + file_name
+      + "created, you can now check the results")
 #------------------------------------------------------------------------------#
-
-#-------------------------------- MOVIES TITLES -------------------------------#
-elif choice == 4:
-
-
-        # Get : number of epochs
-        try:
-            n_epochs = input(bcolors.HEADER
-                             + 'On a scale of 1 (fast but inaccurate) to 10 (effective but slow), which number would you choose?'
-                             + '\n'
-                             + '> '
-                             + bcolors.END)
-            n_epochs = int(n_epochs)
-            if n_epochs not in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-            if (n_epochs == 0):
-                number_epochs = 1
-            elif (n_epochs != 0):
-                number_epochs = n_epochs * 5
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : number of results
-        try:
-            n_results = input(bcolors.HEADER
-                              + 'How many results? (min is 1, max is 100)'
-                              + '\n'
-                              + '> '
-                              + bcolors.END)
-            n_results = int(n_results)
-
-            if (n_results < 1) or (n_results > 100):
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : prefix wanted
-        try:
-            prefix = input(bcolors.HEADER
-                           + 'Do you want a prefix ? (Y/N)'
-                           + '\n'
-                           + '> '
-                           + bcolors.END)
-
-            if prefix.lower() not in ['y', 'n']:
-                print(bcolors.WARNING
-                      + 'Invalid answer!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            try:
-                prefix_name = input(bcolors.HEADER
-                                    + 'Which one?'
-                                    + '\n'
-                                    + '> '
-                                    + bcolors.END)
-
-            except KeyboardInterrupt:
-                print(' → '
-                      + bcolors.FAIL
-                      + 'Interrupted'
-                      + bcolors.END)
-                exit(0)
-
-
-        # Collecting data
-        print(bcolors.OKBLUE
-              + 'Collecting data...'
-              + bcolors.END)
-
-        ia = imdb.IMDb()
-        movies = ia.get_top250_movies()
-
-        with open('../data/data.txt', 'w+') as f:
-            for i in tqdm(range(1, 250)):
-                f.write(movies[i]['title'] + '\n')
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random movies titles with prefix "'
-                  + prefix_name
-                  + '" using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file('../data/data.txt',
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results, prefix = prefix_name)
-
-
-        # Case : prefix is not wanted
-        elif (prefix.lower() == 'n'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random movies titles using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file('../data/data.txt',
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results)
-
-        print(bcolors.OKBLUE
-              + '\n'
-              + 'Writing results to file...'
-              + '\n'
-              + bcolors.END)
-
-
-        # Print results in a file
-        file_name = '../results/movies_titles.txt'
-        textgen.generate_to_file(file_name, n = n_results)
-
-        print(bcolors.OKGREEN
-              + 'Results are located in file '
-              + bcolors.BOLD
-              + file_name
-              + bcolors.END)
-#------------------------------------------------------------------------------#
-
-#---------------------------------- LOCAL FILE --------------------------------#
-elif choice == 5:
-
-        # Get : path of the file
-        try:
-            file_path = input(bcolors.HEADER
-                              + 'From which file? (enter path)'
-                              + '\n'
-                              + '> '
-                              + bcolors.END)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-        # Get : number of epochs
-        try:
-            n_epochs = input(bcolors.HEADER
-                             + 'On a scale of 1 (fast but inaccurate) to 10 (effective but slow), which number would you choose?'
-                             + '\n'
-                             + '> '
-                             + bcolors.END)
-            n_epochs = int(n_epochs)
-            if n_epochs not in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-            if (n_epochs == 0):
-                number_epochs = 1
-            elif (n_epochs != 0):
-                number_epochs = n_epochs * 5
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : number of results
-        try:
-            n_results = input(bcolors.HEADER
-                              + 'How many results? (min is 1, max is 100)'
-                              + '\n'
-                              + '> '
-                              + bcolors.END)
-            n_results = int(n_results)
-
-            if (n_results < 1) or (n_results > 100):
-                print(bcolors.WARNING
-                      + 'Invalid number!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Get : prefix wanted
-        try:
-            prefix = input(bcolors.HEADER
-                           + 'Do you want a prefix? (Y/N)'
-                           + '\n'
-                           + '> '
-                           + bcolors.END)
-
-            if prefix.lower() not in ['y', 'n']:
-                print(bcolors.WARNING
-                      + 'Invalid answer!'
-                      + bcolors.END)
-                exit(1)
-        except KeyboardInterrupt:
-            print(' → '
-                  + bcolors.FAIL
-                  + 'Interrupted'
-                  + bcolors.END)
-            exit(0)
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            try:
-                prefix_name = input(bcolors.HEADER
-                                    + 'Which one?'
-                                    + '\n'
-                                    + '> '
-                                    + bcolors.END)
-
-            except KeyboardInterrupt:
-                print(' → '
-                      + bcolors.FAIL
-                      + 'Interrupted'
-                      + bcolors.END)
-                exit(0)
-
-
-        # Case : prefix is wanted
-        if (prefix.lower() == 'y'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random sentences with prefix "'
-                  + prefix_name
-                  + '" using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file(file_path,
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results, prefix = prefix_name)
-
-
-        # Case : prefix is not wanted
-        elif (prefix.lower() == 'n'):
-            print(bcolors.OKBLUE
-                  + 'Generating '
-                  + str(n_results)
-                  + ' random sentences using '
-                  + str(number_epochs)
-                  + ' epochs...'
-                  + bcolors.END)
-
-            textgen.train_from_file('../data/data.txt',
-                                    num_epochs = number_epochs)
-
-            textgen.generate(n_results)
-
-        print(bcolors.OKBLUE
-              + '\n'
-              + 'Writing results to file...'
-              + '\n'
-              + bcolors.END)
-
-
-        # Print results in a file
-        file_name = '../results/random_text_from_file_' + file_path + '.txt'
-        textgen.generate_to_file(file_name, n = n_results)
-
-        print(bcolors.OKGREEN
-              + 'Results are located in file '
-              + bcolors.BOLD
-              + file_name
-              + bcolors.END)
-#------------------------------------------------------------------------------#
-
-#------------------------------------- EXIT -----------------------------------#
-else:
-        print(bcolors.WARNING
-              + 'Invalid number!'
-              + bcolors.END)
-        exit(1)
-#------------------------------------------------------------------------------#
-#==============================================================================#

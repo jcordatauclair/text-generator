@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <img src="misc/logo.png" alt="Text Generator" width="200"></a>
+  <img src="misc/logo.png" alt="GenIt" width="200"></a>
   <br>
-  Text Generator
+  <b>GenIt</b>
   <br>
 </h1>
 
@@ -26,6 +26,10 @@
 ## **Overview**
 
 ## **How to use**
+
+packages needed
+
+python3 generator.py
 
 ## **Credits**
 
