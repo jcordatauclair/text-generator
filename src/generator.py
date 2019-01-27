@@ -326,7 +326,7 @@ if (prefix_bool == prefix_c[0]):
     textgen.generate(n_results,
                      prefix = prefix_name)
 elif (prefix_bool == prefix_c[1]):
-    textgen.generate(n_results)
+    textgen.generate(results_number)
 cli.delete_last_lines(1)
 print(success_logo
       + "Results generated")
@@ -338,7 +338,10 @@ print(info_logo
 textgen.generate_to_file(file_name, n = results_number)
 cli.delete_last_lines(1)
 print(success_logo
-      + "File "
-      + file_name
-      + "created, you can now check the results")
+      + bcolors.OKGREEN
+      + bcolors.BOLD
+      + "Done! "
+      + bcolors.END
+      + "You can now check the results here: "
+      + file_name)
 #------------------------------------------------------------------------------#
