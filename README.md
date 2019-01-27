@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square">
-  <img src="https://img.shields.io/badge/version-0.1-ff69b4.svg?style=flat-square">
+  <img src="https://img.shields.io/badge/version-0.2-ff69b4.svg?style=flat-square">
   <img src="https://img.shields.io/badge/made_with-python-yellow.svg?style=flat-square">
 </p>
 
@@ -27,14 +27,61 @@
 
 **[GenIt](https://github.com/jcordatauclair/text-generator)** is a command line tool that allows you to generate word sequences through machine learning on any text. So you can have fun creating improbable tweets that Donald Trump could have written or inventing crazy quotes from the famous Oscar Wilde. _There is no limit!_
 
-Currently, it is possible to collect subreddit's titles from [Reddit](), tweets from [Twitter](), quotes from [Wikiquotes]() and movies titles from [IMDb](). Local files are also supported if you want to experiment by yourself.
+Currently, it is possible to collect subreddit's titles from [Reddit](https://www.reddit.com/), tweets from [Twitter](https://twitter.com/), quotes from [Wikiquote](https://www.wikiquote.org/) and movies titles from [IMDb](https://www.imdb.com/). Local files are also supported if you want to experiment by yourself.
 
 ## **How to use**
 
-packages needed
+The program only works with version 3 of python (textgenrnn requires it) and uses several modules indicated at the top of the `gen.py` script (which can be found in the source folder). Be sure to have them installed before running it:
 
-python3 generator.py
+```python
+import praw                         # https://praw.readthedocs.io/en/latest/
+import prawcore                     # https://pypi.org/project/prawcore/
+import twitter                      # https://developer.twitter.com/en/docs.html
+import wikiquotes                   # https://pypi.org/project/wikiquotes/
+import imdb                         # https://media.readthedocs.org/pdf/imdbpy/latest/imdbpy.pdf
+
+from textgenrnn import textgenrnn   # https://github.com/minimaxir/textgenrnn
+from tqdm import tqdm               # https://github.com/tqdm/tqdm
+from pyfiglet import Figlet         # https://github.com/pwaller/pyfiglet
+from keras import backend as k      # https://keras.io/         
+```
+
+You will also need credentials if you want to retrieve data from reddit or twitter. Once you get them, create a `config.py` file in the source folder, copy and paste the code below and fill in the fields with your codes:
+
+```python
+# Reddit
+reddit_client_id = 'YOUR_REDDIT_ID'
+reddit_client_secret = 'YOUR_REDDIT_SECRET'
+reddit_user_agent = 'YOUR_REDDIT_USER_AGENT'
+reddit_username = 'YOUR_REDDIT_USERNAME'
+reddit_password = 'YOUR_REDDIT_PASSWORD'
+
+# Twitter
+twitter_consumer_key = 'YOUR_TWITTER_ID'
+twitter_consumer_secret = 'YOUR_TWITTER_SECRET'
+twitter_access_token_key = 'YOUR_TWITTER_TOKEN_KEY'
+twitter_access_token_secret = 'YOUR_TWITTER_TOKEN_SECRET'
+
+```
+
+Ater that, using this tool is quite simple. Just run the `genit.py` script with the following command, then proceed as described in the shell:
+
+```
+python3 genit.py
+```
+
+The calculation time can be quite long, especially if you want to have consistent results. But don't worry, **you won't be disappointed!**
+
+Here are some interesting outputs I was able to obtain:
+
+```
+"DO NOT TOUCH" would probably be a phone
+```
 
 ## **Credits**
 
+A huge thanks to [Max Woolf](https://github.com/minimaxir/) for sharing his **[textgenrnn](https://github.com/minimaxir/textgenrnn)** project! This is the basis of this tool.
+
 ## **License**
+
+© **[Julien Cordat-Auclair](https://github.com/jcordatauclair)**

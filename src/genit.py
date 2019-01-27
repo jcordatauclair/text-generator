@@ -13,9 +13,9 @@ import imdb                         # https://media.readthedocs.org/pdf/imdbpy/l
 from textgenrnn import textgenrnn   # https://github.com/minimaxir/textgenrnn
 from tqdm import tqdm               # https://github.com/tqdm/tqdm
 from pyfiglet import Figlet         # https://github.com/pwaller/pyfiglet
-from keras import backend as k
-from shutil import copyfile
+from keras import backend as k      # https://keras.io/
 
+from shutil import copyfile
 import cli
 import config
 import sys
