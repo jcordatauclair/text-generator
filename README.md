@@ -27,11 +27,17 @@
 
 **[GenIt](https://github.com/jcordatauclair/text-generator)** is a command line tool that allows you to generate word sequences through machine learning on any text. It essentially uses **[textgenrnn](https://github.com/minimaxir/textgenrnn)** to generate results and several APIs to collect data that will later be used for training. So you can have fun creating improbable tweets that Donald Trump could have written or inventing crazy quotes from the famous Oscar Wilde. _There is no limit!_
 
+```
+"DO NOT TOUCH" would probably be a phone
+The wall is the only solution for our country! MAKE AMERICA GREAT A WALL!
+Hulk of the Galaxy: Return of the Sith (Part II)
+```
+
 Currently, it is possible to collect subreddit's titles from [Reddit](https://www.reddit.com/), tweets from [Twitter](https://twitter.com/), quotes from [Wikiquote](https://www.wikiquote.org/) and movies titles from [IMDb](https://www.imdb.com/). Local files are also supported if you want to experiment by yourself.
 
 ## **How to use**
 
-The program only works with version 3 of python (textgenrnn requires it) and uses several modules indicated at the top of the `gen.py` script (which can be found in the source folder). Be sure to have them installed before running it:
+The program only works with **version 3 of python** (textgenrnn requires it) and uses several modules indicated at the top of the `gen.py` script (which can be found in the source folder). Be sure to have them installed before running it:
 
 ```python
 import praw                         # https://praw.readthedocs.io/en/latest/
@@ -46,7 +52,7 @@ from pyfiglet import Figlet         # https://github.com/pwaller/pyfiglet
 from keras import backend as k      # https://keras.io/         
 ```
 
-You will also need credentials if you want to retrieve data from reddit or twitter. Once you get them, create a `config.py` file in the source folder, copy and paste the code below and fill in the fields with your codes:
+You will also need **credentials** if you want to retrieve data from reddit or twitter. Once you get them, create a `config.py` file in the source folder, copy and paste the code below and fill in the fields with your codes:
 
 ```python
 # Reddit
@@ -71,12 +77,6 @@ python3 genit.py
 ```
 
 The calculation time can be quite long, especially if you want to have consistent results. But don't worry, **you won't be disappointed!**
-
-Here are some interesting outputs I was able to obtain:
-
-```
-"DO NOT TOUCH" would probably be a phone
-```
 
 ## **Credits**
 
