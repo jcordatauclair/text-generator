@@ -52,7 +52,7 @@ from pyfiglet import Figlet         # https://github.com/pwaller/pyfiglet
 from keras import backend as k      # https://keras.io/         
 ```
 
-You will also need **credentials** if you want to retrieve data from reddit or twitter. Once you get them, create a `config.py` file in the source folder, copy and paste the code below and fill in the fields with your codes:
+You will also need **credentials** if you want to retrieve data from Reddit or Twitter. Once you get them, create a `config.py` file in the source folder, copy and paste the code below and fill in the fields with your codes:
 
 ```python
 # Reddit
