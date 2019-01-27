@@ -1,249 +1,169 @@
-The Godfather
-The Godfather: Part II
-The Dark Knight
-12 Angry Men
-Schindler's List
-The Lord of the Rings: The Return of the King
-Pulp Fiction
-The Good, the Bad and the Ugly
-Fight Club
-The Lord of the Rings: The Fellowship of the Ring
-Forrest Gump
-Star Wars: Episode V - The Empire Strikes Back
-Inception
-The Lord of the Rings: The Two Towers
-One Flew Over the Cuckoo's Nest
-Goodfellas
-The Matrix
-Seven Samurai
-Se7en
-City of God
-Star Wars: Episode IV - A New Hope
-The Silence of the Lambs
-It's a Wonderful Life
-Life Is Beautiful
-Spider-Man: Into the Spider-Verse
-The Usual Suspects
-Spirited Away
-Saving Private Ryan
-Léon: The Professional
-The Green Mile
-Interstellar
-Psycho
-American History X
-City Lights
-Once Upon a Time in the West
-Casablanca
-Modern Times
-The Pianist
-The Intouchables
-The Departed
-Back to the Future
-Terminator 2: Judgment Day
-Whiplash
-Rear Window
-Raiders of the Lost Ark
-The Lion King
-Gladiator
-The Prestige
-Apocalypse Now
-Memento
-Alien
-Cinema Paradiso
-Grave of the Fireflies
-The Great Dictator
-Sunset Boulevard
-The Lives of Others
-Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
-Avengers: Infinity War
-Paths of Glory
-The Shining
-Django Unchained
-WALL·E
-Princess Mononoke
-Witness for the Prosecution
-Old Boy
-The Dark Knight Rises
-American Beauty
-Aliens
-Once Upon a Time in America
-Coco
-Das Boot
-Citizen Kane
-Braveheart
-Vertigo
-North by Northwest
-Reservoir Dogs
-Star Wars: Episode VI - Return of the Jedi
-Your Name.
-M
-Amadeus
-Dangal
-Requiem for a Dream
-Like Stars on Earth
-Lawrence of Arabia
-3 Idiots
-Eternal Sunshine of the Spotless Mind
-2001: A Space Odyssey
-A Clockwork Orange
-Toy Story
-Amélie
-Double Indemnity
-Singin' in the Rain
-Taxi Driver
-Inglourious Basterds
-Full Metal Jacket
-Bicycle Thieves
-To Kill a Mockingbird
-The Kid
-The Sting
-Good Will Hunting
-Toy Story 3
-The Hunt
-Snatch
-Scarface
-Monty Python and the Holy Grail
-For a Few Dollars More
-The Apartment
-Metropolis
-L.A. Confidential
-A Separation
-Indiana Jones and the Last Crusade
-Rashomon
-Up
-All About Eve
-Batman Begins
-Yojimbo
-Some Like It Hot
-Unforgiven
-Downfall
-Die Hard
-The Treasure of the Sierra Madre
-Heat
-Andhadhun
-Ikiru
-Incendies
-Raging Bull
-The Great Escape
-Children of Heaven
-Pan's Labyrinth
-Mon père et mon fils
-Chinatown
-The Third Man
-My Neighbor Totoro
-Howl's Moving Castle
-Ran
-Judgment at Nuremberg
-The Secret in Their Eyes
-The Gold Rush
-The Bridge on the River Kwai
-A Beautiful Mind
-Lock, Stock and Two Smoking Barrels
-Casino
-Three Billboards Outside Ebbing, Missouri
-On the Waterfront
-The Seventh Seal
-Inside Out
-The Elephant Man
-The Wolf of Wall Street
-Room
-V for Vendetta
-Mr. Smith Goes to Washington
-Warrior
-Blade Runner
-Dial M for Murder
-Wild Strawberries
-The General
-No Country for Old Men
-Trainspotting
-There Will Be Blood
-The Sixth Sense
-Gone with the Wind
-The Thing
-Fargo
-Bohemian Rhapsody
-Gran Torino
-Come and See
-Finding Nemo
-The Deer Hunter
-Sherlock Jr.
-The Big Lebowski
-Green Book
-Shutter Island
-Kill Bill: Vol. 1
-Cool Hand Luke
-Rebecca
-Tokyo Story
-Mary et Max.
-Hacksaw Ridge
-Gone Girl
-How to Train Your Dragon
-Sunrise
-Jurassic Park
-Les nouveaux sauvages
-Into the Wild
-The Truman Show
-In the Name of the Father
-The Grand Budapest Hotel
-It Happened One Night
-Stand by Me
-Life of Brian
-Platoon
-Stalker
-The Bandit
-Network
-Memories of Murder
-Persona
-Ben-Hur
-Hotel Rwanda
-12 Years a Slave
-Million Dollar Baby
-Andrei Rublev
-The Passion of Joan of Arc
-Before Sunrise
-The Wages of Fear
-Rush
-Mad Max: Fury Road
-The 400 Blows
-Prisoners
-Hachi: A Dog's Tale
-Spotlight
-Logan
-Amores Perros
-Rang De Basanti
-Catch Me If You Can
-The Princess Bride
-Nausicaä of the Valley of the Wind
-Harry Potter and the Deathly Hallows: Part 2
-Butch Cassidy and the Sundance Kid
-Rocky
-Barry Lyndon
-Monsters, Inc.
-The Grapes of Wrath
-The Maltese Falcon
-Dead Poets Society
-The Terminator
-Donnie Darko
-Gandhi
-Diabolique
-La Haine
-Groundhog Day
-In the Mood for Love
-The Wizard of Oz
-The Nights of Cabiria
-The Help
-Jaws
-Mademoiselle
-Before Sunset
-Tangerines
-Drishyam
-Gangs of Wasseypur
-Paris, Texas
-Castle in the Sky
-Paper Moon
-Sanjuro
-The Best Years of Our Lives
-Fanny and Alexander
-8½
-Guardians of the Galaxy
-Pirates of the Caribbean: The Curse of the Black Pearl
+Ours is one continual struggle against a degradation sought to be inflicted upon us by the Europeans, who desire to degrade us to the level of the raw Kaffir whose occupation is hunting, and whose sole ambition is to collect a certain number of cattle to buy a wife with and, then, pass his life in indolence and nakedness.
+One thing we have endeavoured to observe most scrupulously, namely, never to depart from the strictest facts and, in dealing with the difficult questions that have arisen during the year, we hope that we have used the utmost moderation possible under the circumstances. Our duty is very simple and plain. We want to serve the community, and in our own humble way to serve the Empire. We believe in the righteousness of the cause, which it is our privilege to espouse. We have an abiding faith in the mercy of the Almighty God, and we have firm faith in the British Constitution. That being so, we should fail in our duty if we wrote anything with a view to hurt. Facts we would always place before our readers, whether they are palatable or not, and it is by placing them constantly before the public in their nakedness that the misunderstanding between the two communities in South Africa can be removed.
+Why, of all places in Johannesburg, the Indian location should be chosen for dumping down all kaffirs of the town, passes my comprehension. Of course, under my suggestion, the Town Council must withdraw the Kaffirs from the Location. About this mixing of the Kaffirs with the Indians I must confess I feel most strongly. I think it is very unfair to the Indian population, and it is an undue tax on even the proverbial patience of my countrymen.
+In this instance of the fire-arms, the Asiatic has been most improperly bracketed with the native. The British Indian does not need any such restrictions as are imposed by the Bill on the natives regarding the carrying of fire-arms. The prominent race can remain so by preventing the native from arming himself. Is there a slightest vestige of justification for so preventing the British Indian?
+You say that the magistrate's decision is unsatisfactory because it would enable a person, however unclean, to travel by a tram, and that even the Kaffirs would be able to do so. But the magistrate's decision is quite different. The Court declared that the Kaffirs have no legal right to travel by tram. And according to tram regulations, those in an unclean dress or in a drunken state are prohibited from boarding a tram. Thanks to the Court's decision, only clean Indians or coloured people other than Kaffirs, can now travel in the trams.
+A general belief seems to prevail in the colony that the Indians are little better, if at all, than the savages or natives of Africa. Even the children are taught to believe in that manner, with the result that the Indian is being dragged down to the position of a raw Kaffir.
+Kaffirs are as a rule uncivilised—the convicts even more so. They are troublesome, very dirty and live almost like animals.
+Leo Tolstoy's life has been devoted to replacing the method of violence for removing tyranny or securing reform by the method of non­resistance to evil. He would meet hatred expressed in violence by love expressed in self­suffering. He admits of no exception to whittle down this great and divine law of love. He applies it to all the problems that trouble mankind.
+We are our own slaves, not of the British. This should be engraved on our minds. The whites cannot remain if we do not want them.  If the idea is to drive them out with firearms, let every Indian consider what precious little profit Europe has found in these.
+In reality there are as many religions as there are individuals....  Religions are different roads converging to the same point. What does it matter that we take different roads, so long as we reach the same goal. Wherein is the cause for quarrelling?
+The English have taught us that we were not one nation before and that it will reaquire centuries before we become one nation. This is without foundation. We were one nation before they came to India. One thought inspired us. Our mode of life was the same. It was because we were one nation that they were able to establish one kingdom.
+One of the objects of a newspaper is to understand popular feeling and to give expression to it; another is to arouse among the people certain desirable sentiments; and the third is fearlessly to expose popular defects.
+I believe that the civilization India evolved is not to be beaten in the world. Nothing can equal the seeds sown by our ancestors, Rome went, Greece shared the same fate; the might of the Pharaohs was broken; Japan has become Westernized; of China nothing can be said; but India is still, somehow or other, sound at the foundation. The people of Europe learn their lessons from the writings of the men of Greece or Rome, which exist no longer in their former glory. In trying to learn from them, the Europeans imagine that they will avoid the mistakes of Greece and Rome. Such is their pitiable condition. In the midst of all this India remains immovable and that is her glory. It is a charge against India that her people are so uncivilized, ignorant and stolid, that it is not possible to induce them to adopt any changes. It is a charge really against our merit. What we have tested and found true on the anvil of experience, we dare not change. Many thrust their advice upon India, and she remains steady. This is her beauty: it is the sheet-anchor of our hope. Civilization is that mode of conduct which points out to man the path of duty. Performance of duty and observance of morality are convertible terms. To observe morality is to attain mastery over our mind and our passions. So doing, we know ourselves. The Gujarati equivalent for civilization means “good conduct”.
+Victory attained by violence is tantamount to a defeat, for it is momentary.
+[I]t is not true that we shall necessarily progress if our political conditions undergo a change, irrespectively of the manner in which it is brought about. If the means employed are impure, the change will not be in the direction of progress but very likely in the opposite.
+In matters of conscience, the law of majority has no place.
+For me the only training in Swaraj we need is the ability to defend ourselves against the whole world and to live our natural life in perfect freedom, even though it may be full of defects. Good government is no substitute for self-government.
+I have learnt through bitter experience the one supreme lesson to conserve my anger, and as heat conserved is transmuted into energy, even so our anger controlled can be transmuted into a power which can move the world.
+I came in contact with every known Indian anarchist in London. Their bravery impressed me, but I felt that their zeal was misguided. I felt that violence was no remedy for India's ills, and that her civilisation required the use of a different and higher weapon for self-protection.
+If India adopted the doctrine of love as an active part of her religion and introduced it in her politics. Swaraj would descend upon India from heaven. But I am painfully aware that that event is far off as yet.
+I have even seen the writings suggesting that I am playing a deep game, that I am using the present turmoil to foist my fads on India, and am making religious experiments at India's expense. I can only answer that Satyagraha is made of sterner stuff. There is nothing reserved and nothing secret in it.
+I would, in a sense, certainly assist the Amir of Afghanistan if he waged war against the British Government. That is to say, I would openly tell my countrymen that it would be a crime to help a government which had lost the confidence of the nation to remain in power.
+I claim that in losing the spinning wheel we lost our left lung. We are, therefore, suffering from galloping consumption. The restoration of the wheel arrests the progress of the fell disease.
+There is no such thing as slow freedom. Freedom is like a birth. Till we are fully free we are slaves.
+There is a higher court than courts of justice and that is the court of conscience. It supersedes all other courts.
+A man is but the product of his thoughts. What he thinks, he becomes.
+Any action that is dictated by fear or by coercion of any kind ceases to be moral.
+No action which is not voluntary can be called moral.
+Satan's successes are the greatest when he appears with the name of God on his lips.
+The only tyrant I accept in this world is the "still small voice" within me. And even though I have to face the prospect of being a minority of one, I humbly believe I have the courage to be in such a hopeless minority.
+Under democracy individual liberty of opinion and action is jealously guarded.
+If one has no affection for a person or a system, one should feel free to give the fullest expression to his disaffection so long as he does not contemplate, promote, or incite violence.
+Nonviolence is the first article of my faith. It is also the last article of my creed.
+Always believe in your dreams, because if you don't, you'll still have hope.
+Hinduism is a relentless pursuit after truth and if today it has become moribund, inactive, irresponsive to growth, it is because we are fatigued. As soon as the fatigue is over, Hinduism will burst forth upon the world with a brilliance perhaps never known before.
+The indirect influence of Christianity has been to quicken Hinduism to life. The cultured Hindu society has admitted its grievous sin against the untouchables. But the effect of Christianity upon India in general must be judged by the life lived in our midst by the average Christian and its effect upon us. I am sorry to have to re record my opinion that it has been disastrous. It pains me to have to say that the Christian missionaries as a body, with honourable exceptions, have actively supported a system which has impoverished, enervated and demoralised a people considered to be among the gentlest and most civilized on earth...
+I wanted to know the best of the life of one (Muhammad) who holds today an undisputed sway over the hearts of millions of mankind. I became more than ever convinced that it was not the sword that won a place for Islam in those days in the scheme of life. It was the rigid simplicity, the utter self-effacement of the Prophet the scrupulous regard for pledges, his intense devotion to his friends and followers, his intrepidity, his fearlessness, his absolute trust in God and in his own mission. These and not the sword carried everything before them and surmounted every obstacle.
+“My error? Why, I may be charged with having committed a breach of faith with the Hindus. I asked them to lay their lives and their property at the disposal of the Mussalmans for the protection of their Holy Places. Even to-day I am asking them to practise Ahimsa, to settle quarrels by dying but not by killing. And what do I find to be the result? How many temples have been desecrated? How many sisters came to me with complaints? As I was saying to Hakimji [Ajmal Khan] yesterday, Hindu women are in mortal fear of Mussalman goondas. I had a letter from… How can I bear the way in which his little children were molested? How can I now ask Hindus to put up with everything patiently? I gave the assurance that the friendship with Mussalmans was bound to bear fruit. I asked them to befriend them, regardless of results. It is not in my power to make good that assurance. And yet I must ask the Hindus even to-day to die rather than kill. I can only do so by laying down my own life. I can teach them the way to die by my own example.”
+Some of my corresponents seem to think that I can work wonders. Let me say as a devotee of truth that I have no such gift. All the power I may have comes from God. But He does not work directly. He works through His numberless agencies. In this case it is the Congress.
+I do not believe as the friend seems to do that an individual may gain spiritually and those who surround him suffer. I believe in advaita [nonduality], I believe in the essential unity of man and for that matter of all that lives. Therefore I believe that if one man gains spiritually, the whole world gains with him and if one man falls, the whole world falls to that extent.
+[R]eal Swaraj will come, not by the acquisition of authority by a few, but by the acquisition of the capacity by all to resist authority when it is abused. In other words, Swaraj is to be attained by educating the masses to a sense of their capacity to regulate and control authority.
+There is no principle worth the name if it is not wholly good. I swear by non-violence because I know that it alone conduces to the highest good of mankind, not merely in the next world, but in this also. I object to violence because, when it appears to do good, the good is only temporary, the evil it does is permanent.
+Self-government means continuous effort to be independent of government control, whether it is foreign government or whether it is national. Swaraj government will be a sorry affair if people look up for the regulation of every detail of life.
+What the divine author of the Mahabharata said of his great creation is equally true of Hinduism. Whatever of substance is contained in any other religion is always to be found in Hinduism, and what is not contained in it is insubstantial or unnecessary.
+Seven social sins: politics without principles, wealth without work, pleasure without conscience, knowledge without character, commerce without morality, science without humanity, and worship without sacrifice.
+Hinduism is like the Ganga,, pure and unsullied at its source but taking in its course the impurities in the way. Even like the Ganga it is beneficent in its total effect. It takes a provincial form in every provinvce, but the inner substance is retained everywhere.
+Our sages have taught us to learn one thing; `As in the Self, so in the Universe.' It is not possible to scan the universe as it is to scan the self. Know the self and you know the universe.
+The cry for peace will be a cry in the wilderness, so long as the spirit of nonviolence does not dominate millions of men and women.  An armed conflict between nations horrifies us. But the economic war is no better than an armed conflict. This is like a surgical operation. An economic war is prolonged torture. And its ravages are no less terrible than those depicted in the literature on war properly so called. We think nothing of the other because we are used to its deadly effects. …  The movement against war is sound. I pray for its success. But I cannot help the gnawing fear that the movement will fail if it does not touch the root of all evil — man's greed.
+Now when we talk of brotherhood of men, we stop there and feel that all other life is there for man to exploit for his own purposes. But Hinduism excludes all exploitation.
+An error does not become truth by reason of multiplied propagation, nor does truth become error because nobody sees it. Truth stands, even if there be no public support. It is self sustained.
+I’m a lover of my own liberty, and so I would do nothing to restrict yours. I simply want to please my own conscience, which is God.
+For one man cannot do right in one department of life whilst he is occupied in doing wrong in any other department. Life is one indivisible whole.
+On examination, I have found [Hinduism] to be the most tolerant of all religions known to me. Its freedom from dogma makes a forcible appeal to me in as much as it gives the votary the largest scope for self-expression. Not being an exclusive religion, it enables the followers of the faith not merely to respect all the other religions, but it also enables them to admire and assimilate whatever may be good in the other faiths. Non-violence is common to all religions, but it has found the highest expression and application in Hinduism. (I do not regard Jainism or Buddhism as separate from Hinduism.) Hinduism believes in the oneness not of merely all human life but in the oneness of all that lives.
+God forbid that India should ever take to industrialism after the manner of the West. The economic imperialism of a single tiny island kingdom is today keeping the world in chains. If an entire nation of 300 million took to similar economic exploitation, it would strip the world bare.
+My ambition is much higher than independence. Through the deliverance of India, I seek to deliver the so-called weaker races of the Earth from the crushing heels of Western exploitation in which England is the greatest partner.
+I came to the conclusion long ago … that all religions were true and also that all had some error in them, and whilst I hold by my own, I should hold others as dear as Hinduism. So we can only pray, if we are Hindus, not that a Christian should become a Hindu … But our innermost prayer should be a Hindu should be a better Hindu, a Muslim a better Muslim, a Christian a better Christian.
+It is not possible to make a person or society non-violent by compulsion.
+I have been known as a crank, faddist, madman. Evidently the reputation is well deserved. For wherever I go, I draw to myself cranks, faddists, and madmen.
+I am uncompromising in the matter of woman's rights. In my opinion she should labour under no legal disability not suffered by man, I should treat the daughters and sons on a footing of perfect equality.
+In this age of the rule of brute force, it is almost impossible for anyone to believe that anyone else could possibly reject the law of final supremacy of brute force. And so I receive anonymous letters advising me that I must not interfere with the progress of non-co-operation even though popular violence may break out. Others come to me and assuming that secretly I must be plotting violence, inquire when the happy moment for declaring open violence to arrive. They assure me that English never yield to anything but violence secret or open. Yet others I am informed, believe that I am the most rascally person living in India because I never give out my real intention and that they have not a shadow of a doubt that I believe in violence just as much as most people do. Such being the hold that the doctrine of the sword has on the majority of mankind, and as success of non-co-operation depends principally on absence of violence during its pendency and as my views in this matter affect the conduct of large number of people. I am anxious to state them as clearly as possible.  I do believe that where there is only a choice between cowardice and violence I would advise violence.
+I advocate training in arms for those who believe in the method of violence. I would rather have India resort to arms in order to defend her honor than that she should in a cowardly manner become or remain a helpless witness to her own dishonor.  But I believe that nonviolence is infinitely superior to violence, forgiveness is more manly than punishment, forgiveness adorns a soldier. But abstinence is forgiveness only when there is the power to punish, it is meaningless when it pretends to proceed from a helpless creature. A mouse hardly forgives cat when it allows itself to be torn to pieces by her. … I do not believe myself to be a helpless creature. Only I want to use India's and my strength for better purpose.  Let me not be misunderstood. Strength does not come from physical capacity. It comes from an indomitable will.
+We in India may in moment realize that one hundred thousand Englishmen need not frighten three hundred million human beings. A definite forgiveness would therefore mean a definite recognition of our strength. … I must not refrain from a saying that India can gain more by waiving the right of punishment. We have better work to do, a better mission to deliver to the world.  I am not a visionary. I claim to be a practical idealist. The religion of nonviolence is not meant merely for the Rishis and saints. It is meant for the common people as well. Nonviolence is the law of our species as violence is the law of the brute. The spirit lies dormant in the brute and he knows no law but that of physical might. The dignity of man requires obedience to a higher law — to the strength of the spirit.
+Nonviolence in its dynamic condition means conscious suffering. It does not means meek submission to the will of the evil-doer, but it means the putting of one's whole soul against the will of the tyrant. Working under this law of being , it is possible for a single individual to defy the whole might of an unjust empire to save his honor, his religion, his soul and lay the foundation for the empire's fall or its regeneration.  And so I am not pleading for India to practice nonviolence because it is weak. I want her to practice nonviolence being conscious of her strength and power. No training in arms is required for realization of her strength. We seem to need it because we seem to think that we are but a lump of flesh. I want India to recognize that she has a soul that cannot perish and that can rise triumphant above every physical weakness and defy the physical combination of a whole world.
+I invite even the school of violence to give this peaceful non-co-operation a trial. It will not fail through its inherent weakness. It may fail because of poverty of response. Then will be one time for real danger. The high-souled men, who are unable to suffer national humiliation any longer, will want to vent their wrath. They will take to violence.
+I am wedded to India because I owe my all to her. I believe absolutely that she has a mission for the world. She is not to copy Europe blindly, India's acceptance of the doctrine of the sword will be the hour of my trial. I hope I shall not be found wanting. My religion has no geographical limits. If I have a living faith in it, it will transcend my love for India herself. My life is dedicated to service of India through the religion of nonviolence which I believed to be the root of Hinduism.  Meanwhile I urge those who distrust me, not to disturb the even working of the struggle that has just commenced, by inciting to violence in the belief that I want violence I detest secrecy as a sin. Let them give nonviolence non co-operation a trial and they will find that I had no mental reservation whatsoever.
+It is not my purpose to attempt a real autobiography. I simply want to tell the story of my experiments with truth...as my life consists of nothing but those experiments.
+In judging myself I shall try to be as harsh as truth, as I want others also to be. Measuring myself by that standard I must exclaim with Surdas:  ' Where is there a wretch So wicked and loathsome as I? I have forsaken my Maker, So faithless have I been.' For it is an unbroken torture to me that I am still so far from him, who, as I fully know, governs every breath of my life, and whose offspring I am. I know that it is the evil passions within that keep me so far from Him, and yet I cannot get away from them.
+I am a Hindu by birth. And yet I do not know much of Hinduism, and I know less of other religions. In fact I do not know where I am, and what is and what should be my belief. I intend to make a careful study of my own religion and, as far as I can, of other religions as well.
+Among the many misdeeds of the British rule in India, history will look upon the Act depriving a whole nation of arms as the blackest. If we want the Arms Act to be repealed, if we want to learn the use of arms, here is a golden opportunity. If the middle classes render voluntary help to Government in the hour of its trial, distrust will disappear, and the ban on possessing arms will be withdrawn.
+Jealousy does not wait for reasons.
+Nothing is impossible for pure love.
+I saw that bad handwriting should be regarded as a sign of an imperfect education.
+That is why a thinker like Thoreau said that ‘that government is the best which governs the least.’ This means that when people come into possession of political power, the interference with the freedom of people is reduced to a minimum. In other words, a nation that runs its affairs smoothly and effectively without much State interference is truly democratic. Where such a condition is absent, the form of government is democratic in name.
+Every Hindu boy and girl should possess sound Sanskrit learning.
+It is now my opinion that in all Indian curricula of higher education there should be a place for Hindi, Sanskrit, Persian, Arabic and English, besides of course the vernacular.
+Today I know that physical training should have as much place in the curriculum as mental training.
+A man of truth must also be a man of care.
+About this time, I heard of a well known Hindu having been converted to Christianity. It was the talk of the town that, when he was baptized, he had to eat beef and drink liquor, that he also had to change his clothes, and that thenceforth he began to go about in European costume including a hat. These things got on my nerves. Surely, thought I, a religion that compelled one to eat beef, drink liquor, and change one's own clothes did not deserve the name. I also heard that the new convert had already begun abusing the religion of his ancestors, their customs and their country. All these things created in me a dislike for Christianity.
+I saw that the writers on vegetarianism had examined the question very minutely, attacking it in its religious, scientific, practical and medical aspects. Ethically they had arrived at the conclusion that man's supremacy over the lower animals meant not that the former should prey upon the latter, but that the higher should protect the lower, and that there should be mutual aid between the two as between man and man.
+One golden rule is to accept the interpretation honestly put on the pledge by the party administering it.
+A convert's enthusiasm for his new religion is greater than that of a person who is born in it.
+Supplication, worship, prayer are no superstition; they are acts more real than the acts of eating, drinking, sitting or walking. It is no exaggeration to say that they alone are real, all else is unreal.
+Selfishness is blind.
+My joy was boundless. I had learnt the true practice of law. I had learnt to find out the better side of human nature and to enter men’s hearts. I realized the true function of a lawyer was to unite parties riven asunder. The lesson was so indelibly burnt into me that a large part of my time during the twenty years of my practice as a lawyer was occupied in bringing about private compromises of hundreds of cases. I lost nothing thereby - not even money, certainly not my soul.
+But all my life though, the very insistence on truth has taught me to appreciate the beauty of compromise. I saw in later life that this spirit was an essential part of Satyagraha. It has often meant endangering my life and incurring the displeasure of friends. But truth is hard as adamant and tender as a blossom.
+I had learnt at the onset not to carry on public work with borrowed money.
+To my mind the life of a lamb is no less precious than that of a human being. I should be unwilling to take the life of a lamb for the sake of the human body. I hold that, the more helpless a creature, the more entitled it is to protection by man from the cruelty of man.
+"Hate the sin and not the sinner" is a precept which, though easy enough to understand, is rarely practiced, and that is why the poison of hatred spreads in the world... Man and his deed are two distinct things. It is quite proper to resist and attack a system, but to resist and attack its author is tantamount to resisting and attacking one-self. For we are all tarred with the same brush and are children of one and the same Creator, and as such the divine powers within us are infinite. To slight a single human being is to slight those divine powers, and thus to harm not only that being, but with him, the whole world.
+My uniform experience has convinced me that there is no other God than Truth.
+To see the universal and all-pervading Spirit of Truth face to face one must be able to love the meanest of creation as oneself. And a man who aspires after that cannot afford to keep out of any field of life. That is why my devotion to Truth has drawn me into the field of politics; and I can say without the slightest hesitation, and yet in all humility, that those who say that religion has nothing to do with politics do not know what religion means.  Identification with everything that lives is impossible without self-purification; without self-purification the observance of the law of Ahimsa must remain an empty dream; God can never be realized by one who is not pure of heart. Self-purification therefore must mean purification in all the walks of life. And purification being highly infectious, purification of oneself necessarily leads to the purification of one's surroundings.  But the path of self-purification is hard and steep. To attain to perfect purity one has to become absolutely passion-free in thought, speech and action; to rise above the opposing currents of love and hatred, attachment and repulsion. I know that I have not in me as yet that triple purity, in spite of constant ceaseless striving for it. That is why the world's praise fails to move me, indeed it very often stings me. To conquer the subtle passions seems to me to be far harder than the physical conquest of the world by the force of arms. Ever since my return to India I have had experiences of the dormant passions lying hidden within me. The knowledge of them has made me feel humiliated though not defeated. The experiences and experiments have sustained me and given me great joy. But I know that I have still before me a difficult path to traverse. I must reduce myself to zero. So long as a man does not of his own free will put himself last among his fellow creatures, there is no salvation for him. Ahimsa is the farthest limit of humility.
+To call woman the weaker sex is a libel; it is man's injustice to woman. If by strength is meant brute strength, then, indeed, is woman less brute than man. If by strength is meant moral power, then woman is immeasurably man's superior. Has she not greater intuition, is she not more self-sacrificing, has she not greater powers of endurance, has she not greater courage? Without her, man could not be. If nonviolence is the law of our being, the future is with woman. Who can make a more effective appeal to the heart than woman?
+By its very nature, non-violence cannot ‘seize’ power, nor can that be its goal. But non-violence can do more; it can effectively control and guide power without capturing the machinery of government.  That is its beauty.
+Freedom is not worth having if it does not connote freedom to err. It passes my comprehension how human beings, be they ever so experienced and able, can delight in depriving other human beings of that precious right.
+The weak can never forgive. Forgiveness is the attribute of the strong.
+On all occasions of trial He has saved me. I know that the phrase 'God saved me' has a deeper meaning for me today, and still I feel that I have not yet grasped its entire meaning. Only richer experience can help me to a fuller understanding.  But in all my trials — of a spiritual nature, as a lawyer, in conducting institutions, and in politics — I can say that God saved me. When every hope is gone, 'when helpers fail and comforts flee', I experience that help arrives somehow, from I know not where.
+It is beyond my power to induce in you a belief in God. There are certain things which are self proved and certain which are not proved at all. The existence of God is like a geometrical axiom. It may be beyond our heart grasp. I shall not talk of an intellectual grasp. Intellectual attempts are more or less failures, as a rational explanation cannot give you the faith in a living God. For it is a thing beyond the grasp of reason. It transcends reason. There are numerous phenomena from which you can reason out the existence of God, but I shall not insult your intelligence by offering you a rational explanation of that type. I would have you brush aside all rational explanations and begin with a simple childlike faith in God. If I exist, God exists. With me it is a necessity of my being as it is with millions. They may not be able to talk about it, but from their life you can see that it is a part of their life. I am only asking you to restore the belief that has been undermined. In order to do so, you have to unlearn a lot of literature that dazzles your intelligence and throws you off your feet. Start with the faith which is also a token of humility and an admission that we know nothing, that we are less than atoms in this universe. We are less than atoms, I say, because the atom obeys the law of its being, whereas we in the insolence of our ignorance deny the law of nature. But I have no argument to address to those who have no faith.
+I say without fear of my figures being successfully challenged that India today is more illiterate than it was before a fifty or hundred years ago, and so is Burma, because the British administrators when they came to India, instead of taking hold of things as they were, began to root them out. They scratched the soil and began to look at the root and left the root like that and the beautiful tree perished.
+England has got successful competitors in America, Japan, France, Germany. It has competitors in the handful of mills in India, and as there has been an awakening in India, even so there will be an awakening in South Africa with its vastly richer resources — natural, mineral and human. The mighty English look quite pigmies before the mighty races of Africa. They are noble savages after all, you will say. They are certainly noble, but no savages and in the course of a few years the Western nations may cease to find in Africa a dumping ground for their wares.
+If we are to reach real peace in this world and if we are to carry on a real war against war, we shall have to begin with children; and if they will grow up in their natural innocence, we won’t have to struggle, we won’t have to pass fruitless idle resolutions. But we shall go from love to love and peace to peace, until at last all the corners of the world are covered with that peace and love for which, consciously or unconsciously, the whole world is hungering.
+Vegetarians should have that moral basis—that a man was not born a carnivorous animal, but born to live on the fruits and herbs that the earth grows.
+I do feel that spiritual progress does demand at some stage—an inexorable demand—that we should cease to kill our fellow-creatures for satisfaction of our bodily wants.
+I regard myself as a soldier, though a soldier of peace.
+I do not believe in the doctrine of the greatest number. It means in its nakedness that in order to achieve the supposed good of 51 per cent the interests of 49 per cent may be, or rather, should be sacrificed. It is a heartless doctrine and has done harm to humanity.
+For me the voice of God, of Conscience, of Truth or the Inner Voice or ‘the still small Voice’ mean one and the same thing. I saw no form. I have never tried, for I have always believed God to be without form. One who realizes God is freed from sin for ever.... But what I did hear was like a Voice from afar and yet quite near. It was as unmistakable as some human voice definitely speaking to me, and irresistible. I was not dreaming at the time I heard the Voice. The hearing of the Voice was preceded by a terrific struggle within me. Suddenly the Voice came upon me. I listened, made certain that it was the Voice, and the struggle ceased. I was calm. The determination was made accordingly, the date and the hour of the fast were fixed.... Could I give any further evidence that it was truly the Voice that I heard and that it was not an echo of my own heated imagination? I have no further evidence to convince the sceptic. He is free to say that it was all self-delusion or hallucination. It may well have been so. I can offer no proof to the contrary. But I can say this — that not the unanimous verdict of the whole world against me could shake me from the belief that what I heard was the true voice of God.
+But religion is not like a house or a cloak which can be changed at will. It is more an integral part of one's self than of one's body. Religion is the tie that binds one to one's Creator, and while the body perishes as it has to, religion persists even after that.
+I look upon an increase in the power of the State with the greatest fear because, although while apparently doing good by minimizing exploitation, it does the greatest harm to mankind by destroying individuality, which lies at the root of the progress. We know of so many cases where men have adopted trusteeship, but none where the State has really lived for the poor.
+It is my firm conviction that if the State suppressed capitalism by violence, it will be caught in the coils of violence itself, and fail to develop non-violence at any time. The state represents violence in a concentrated and organized form. The Individual has a soul, but as the state is a soulless machine, it can never be weaned from violence to which it owes its very existence.
+“Only the other day .a missionary descended on a famine area with money in his pocket, distributed it among the famine-stricken, converted them to his fold, took charge of their temple and demolished it.  This is outrageous. The temple could not belong to the converted Hindus, and it could not belong to the Christian missionary.  But this friend goes and gets it demolished at the hands of the very men who, only a little while ago, believed that God was there.”
+“If I had power and could legislate, I should certainly stop all proselytizing. For Hindu households, the advent of a missionary has meant the disruption of the family, coming in the wake of change of dress, manners, language, food and drink.”
+Man's excellence lies in his readiness to let others live and lay down his own life. As he progresses, his food also changes for the better. He has the capacity to grow still further. There have been many more discoveries after Darwin's. The book which you have been reading seems to be an old one. Whether it is old or new, the "Principle of the greatest good of the greatest number," or "survival of the fittest" is false.
+I worship God as Truth only. I have not yet found Him, but I am seeking after Him.
+Hinduism insists on the brotherhood of not only all mankind but of all that lives.
+I am a lover of my own liberty and so I would do nothing to resist yours.
+It is impossible for me to reconcile myself to the idea of conversion after the style that goes on in India and elsewhere today. It is an error which is perhaps the greatest impediment to the world’s progress toward peace … Why should a Christian want to convert a Hindu to Christianity? Why should he not be satisfied if the Hindu is a good or godly man?Collected Works of Mahatma Gandhi
+If there ever could be a justifiable war in the name of and for humanity, a war against Germany, to prevent the wanton persecution of a whole race, would be completely justified. But I do not believe in any war. A discussion of the pros and cons of such a war is therefore outside my horizon or province.
+The cry for the national home for the Jews does not make much appeal to me. The sanction for it is sought in the Bible and the tenacity with which the Jews have hankered after return to Palestine. Why should they not, like other peoples of the earth, make that country their home where they are born and where they earn their livelihood?
+Palestine belongs to the Arabs in the same sense that England belongs to the English or France to the French. It is wrong and in-human to impose the Jews on the Arabs.
+Among the many misdeeds of the British rule in India, history will look upon the act depriving a whole nation of arms as the blackest. [3]
+Political power, in my opinion, cannot be our ultimate aim. It is one of the means used by men for their all-round advancement. The power to control national life through national representatives is called political power. Representatives will become unnecessary if the national life becomes so perfect as to be self-controlled. It will then be a state of enlightened anarchy in which each person will become his own ruler. He will conduct himself in such a way that his behaviour will not hamper the well-being of his neighbours. In an ideal State there will be no political institution and therefore no political power. That is why Thoreau has said in his classic statement that "that government is the best which governs the least". [From Hindi] Sarvodaya, January, 1939
+It is unwise to be too sure of one's own wisdom. It is healthy to be reminded that the strongest might weaken and the wisest might err.
+I have always held that social justice, even to the least the lowliest, is impossible of attainment by force.
+I do not want to see the allies defeated. But I do not consider Hitler to be as bad as he is depicted. He is showing an ability that is amazing and seems to be gaining his victories without much bloodshed. Englishmen are showing the strength that Empire builders must have. I expect them to rise much higher than they seem to be doing.
+Whatever Hitler may ultimately prove to be, we know what Hitlerism has come to mean, It means naked, ruthless force reduced to an exact science and worked with scientific precision. In its effect it becomes almost irresistible.Hitlerism will never be defeated by counter-Hitlerism. It can only breed superior Hitlerism raised to nth degree. What is going on before our eyes is the demonstration of the futility of violence as also of Hitlerism.What will Hitler do with his victory? Can he digest so much power? Personally he will go as empty-handed as his not very remote predecessor Alexander. For the Germans he will have left not the pleasure of owning a mighty empire but the burden of sustaining its crushing weight. For they will not be able to hold all the conquered nations in perpetual subjection. And I doubt if the Germans of future generations will entertain unadulterated pride in the deeds for which Hitlerism will be deemed responsible. They will honour Herr Hitler as genius, as a brave man, a matchless organizer and much more. But I should hope that the Germans of the future will have learnt the art of discrimination even about their heroes. Anyway I think it will be allowed that all the blood that has been spilled by Hitler has added not a millionth part of an inch to the world’s moral stature.
+A seeker after Truth cannot afford to indulge in generalisation.  Darwin for the greater part of his book Origin of the Species [sic] has simply massed fact upon fact without any theorising, and only towards the end has formulated his conclusion which, because of the sheer weight of testimony behind it, becomes almost irresistible. Yes I have criticised even Darwin's generalisation as being unwarranted.  Science tells us that a proposition may hold good in nine hundred ninety-nine cases and yet fail in the thousandth case and thus be rendered untenable as a universal statement.
+A society organized and run on the basis of complete nonviolence would be the purest anarchy... That State is perfect and non-violent where the people are governed the least.
+The ideally non-violent state will be an ordered anarchy. That State is the best governed which is governed the least.
+What difference does it make to the dead, the orphans, and the homeless, whether the mad destruction is wrought under the name of totalitarianism or the holy name of liberty and democracy?
+I suggest that, if India is to evolve along nonviolent lines, it will have to decentralize many things. Centralization cannot be sustained and defended without adequate force . . .Centralization as a system is inconsistent with non-violent structure of society.
+No society can possibly be built upon a denial of individual freedom.It is contrary to the very nature of man. Just as a man will not grow horns or a tail, so will he not exist as man if he has no mind of his own. In reality even those who do not believe in the liberty of the individual believe in their own.
+My conception of freedom is no narrow conception. It is co-extensive with the freedom of man in all his majesty.
+Ours is not a drive for power, but purely a non-violent fight for India’s independence. In a violent struggle, a successful general has been often known to effect a military coup and to set up a dictatorship. But under the Congress scheme of things, essentially non-violent as it is, there can be no room for dictatorship. A non-violent soldier of freedom will covet nothing for himself, he fights only for the freedom of his country.I read Carlyle’s French Revolution while I was in prison, and Pandit Jawaharlal has told me something about the Russian revolution. But it is my conviction that inasmuch as these struggles were fought with the weapon of violence they failed to realize the democratic ideal. In the democracy which I have envisaged, a democracy established by non-violence, there will be equal freedom for all. Everybody will be his own master. It is to join a struggle for such democracy that I invite you today. Once you realize this you will forget the differences between the Hindus and Muslims, and think of yourselves as Indians only, engaged in the common struggle for independence.  We cannot evoke the true spirit of sacrifice and valour, so long as we are not free. I know the British Government will not be able to withhold freedom from us, when we have made enough self-sacrifice. We must, therefore, purge ourselves of hatred.
+The moment the slave resolves that he will no longer be a slave, his fetters fall. He frees himself and shows the way to others. Freedom and slavery are mental states. Therefore, the first thing to say to yourself: 'I shall no longer accept the role of a slave. I shall not obey orders as such but shall disobey them when they are in conflict with my conscience.
+I draw no distinction between error and sin. If a man commits a bona fide mistake and confesses it with a contrite heart before his Maker, the merciful Maker sterilizes it of all harm.
+The only thing lawful is non-violence. Violence can never be lawful in the sense meant here, i.e., not according to man-made laws, but according to the laws made by Nature for man.
+We both may be killed by the Muslims, and must put our purity to the ultimate test, so that we know that we are offering the purest of sacrifices, and we should now both start sleeping naked.
+If you want to give a message again to the West, it must be a message of 'Love', it must be a message of 'Truth'. There must be a conquest — [audience claps] — please, please, please. That will interfere with my speech, and that will interfere with your understanding also. I want to capture your hearts and don't want to receive your claps. Let your hearts clap in unison with what I'm saying, and I think, I shall have finished my work. Therefore, I want you to go away with the thought that Asia has to conquer the West. Then, the question that a friend asked yesterday, "Did I believe in one world?" Of course, I believe in one world. And how can I possibly do otherwise, when I become an inheritor of the message of love that these great un-conquerable teachers left for us? You can redeliver that message now, in this age of democracy, in the age of awakening of the poorest of the poor, you can redeliver this message with the greatest emphasis.
+There was a time when people listened to me because I showed them how to give fight to the British without arms when they had no arms and the British Government was fully equipped and organised for an armed fight. But today I am told that my non-violence can be of no avail against the communal madness and, therefore, people should arm themselves for self-defence. If this is true, it has to be admitted that our thirty years of nonviolent practice was an utter waste of time. We should have from the beginning trained ourselves in the use of arms. But I do not agree that our thirty years' probation in nonviolence has been utterly wasted. It was due to our non-violence, defective though it was, that we were able to bear up under the heaviest repression and the message of independence penetrated every nook and corner of India. But as our non-violence was the nonviolence of the weak, the leaven did not spread. Had we adopted non-violence as the weapon of the strong, because we realised that it was more effective than any other weapon, in fact the mightiest force in the world, we would have made use of its full potency and not have discarded it as soon as the fight against the British was over or we were in a position to wield conventional weapons. But as I have already said, we adopted it out of our helplessness. If we had the atom bomb, we would have used it against the British.
+Impure means result in an impure end… One cannot reach truth by untruthfulness. Truthful conduct alone can reach Truth.
+[Government] control gives rise to fraud, suppression of truth, intensification of the black market and artificial scarcity. Above all, it unmans the people and deprives them of initiative, it undoes the teaching of self-help…It makes them spoon-fed.
+Muslims must realize and admit the wrongs perpetrated under the Islamic rule.
+Truth never damages a cause that is just.
+In the dictionary of Satyagraha, there is no enemy.
+It is better to be violent, if there is violence in our breasts, than to put on the cloak of non-violence to cover impotence. Violence is any day preferable to impotence. There is hope for a violent man to become non-violent. There is no such hope for the impotent.
+Capital as such is not evil; it is its wrong use that is evil. Capital in some form or other will always be needed.
+Earth provides enough to satisfy every man's need but not for every man's greed.
+This war has descended upon mankind as a curse and a warning. It is a curse inasmuch as it is brutalizing man on a scale hitherto unknown. All distinctions between combatants and noncombatants have been abolished. No one and nothing is to be spared. Lying has been reduced to an art. Britain was to defend small nationalities. One by one they have vanished, at least for the time being. It is also a warning. It is a warning that, if nobody reads the writing on the wall, man will be reduced to the state of the beast, whom he is shaming by his manners. I read the writing when the hostilities broke out. But I had not the courage to say the word. God has given me the courage to say it before it is too late.
+I appeal for cessation of hostilities, not because you are too exhausted to fight, but because war is bad in essence. You want to kill Nazism. You will never kill it by its indifferent adoption. Your soldiers are doing the same work of destruction as the Germans. The only difference is that perhaps yours are not as thorough as the Germans. If that be so, yours will soon acquire the same thoroughness as theirs, if not much greater. On no other condition can you win the war. In other words, you will have to be more ruthless than the Nazis. No cause, however just, can warrant the indiscriminate slaughter that is going on minute by minute. I suggest that a cause that demands the inhumanities that are being perpetrated today cannot be called just.
+I do not want Britain to be defeated, nor do I want her to be victorious in a trial of brute strength, whether expressed through the muscle or the brain.  Your muscular bravery is an established fact. Need you demonstrate that your brain is also as unrivaled in destructive power as your muscle?  I hope you do not wish to enter into such an undignified competition with the Nazis.  I venture to present you with a nobler and a braver way, worthy of the bravest soldier. I want you to fight Nazism without arms, or, if I am to retain the military terminology, with non-violent arms.' I would like you to lay down the arms you have as being useless for saving you or humanity.  You will invite Herr Hitler and Signor Mussolini to take what they want of the countries you call your possessions. Let them take possession of your beautiful island, with your many beautiful buildings. You will give all these, but neither your souls, nor your minds. If these gentlemen choose to occupy your homes, you will vacate them.  If they do not give you free passage out, you will allow yourself, man, woman and child, to be slaughtered, but you will refuse to owe allegiance to them.  This process or method, which I have called non-violent non-co-operation, is not without considerable success in its use in India. Your representatives in India may deny my claim. If they do, I shall feel sorry for them. '
+This is no appeal made by a man who does not know his business. I have been practising with scientific precision non-violence and its possibilities for an unbroken period of over fifty years. I have applied it in every walk of life, domestic, institutional, economic and political. I know of no single case in which it has failed. Where it has seemed sometimes to have failed, I have ascribed it to my imperfections. I claim no perfection for my self. But I do claim to be a passionate seeker after Truth, which is but another name for God. In the course of the search the discovery of non-violence came to me. Its spread is my life-mission. I have no interest in living except for the prosecution of that mission.
+Whatever the ultimate fate of my country, my love for you remains, and will remain, undiminished. My non-violence demands universal love, and you are not a small part of it. It is that love which has prompted my appeal to you.
+May God give power to every word of mine. In his name I began to write this, and in His name I close it. May your statesman have the wisdom and courage to respond to my appeal. I am telling His Excellency the Viceroy that my services are at the disposal of His Majesty’s Government, should they consider them of any practical use in advancing the object of my appeal.
+Hitler killed five million Jews. It is the greatest crime of our time. But the Jews should have offered themselves to the butcher's knife. They should have thrown themselves into the sea from cliffs. As it is, they succumbed anyway in their millions.
+Nor, do I believe in inequalities between human beings. We are all absolutely equal. But equality is of the souls and not the bodies. Hence, it is a mental state. We need to think of, and to assert, equality because we see great inequality in the physical world. We have to realize equality in the midst of this apparent external inequality. Assumption of superiority by any person over any other is a sin against God and man. Thus caste, in so far as it connotes distinctions in status, is an evil.
+Truth alone will endure, all the rest will be swept away before the tide of time. I must continue to bear testimony to truth even if I am forsaken by all. Mine may today be a voice in the wilderness, but it will be heard when all other voices are silenced, if it is the voice of Truth.
+You must not lose faith in humanity. Humanity is an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty.
+An unjust law is itself a species of violence. Arrest for its breach is more so. Now the law of nonviolence says that violence should be resisted not by counter-violence but by nonviolence. This I do by breaking the law and by peacefully submitting to arrest and imprisonment.
+All faiths are a gift of God, but partake of human imperfection, as they pass through the medium of humanity. God-given religion is beyond all speech. Imperfect men put it into such language as they can command, and their words are interpreted by other men equally imperfect. Whose interpretation must be held to be the right one ? Every one is right from his own standpoint, but it is not impossible that every one is wrong. Hence the necessity for tolerance, which does not mean indifference towards one’s own faith, but a more intelligent and purer love for it. Tolerance gives us spiritual insight, which is as far from fanaticism as the north pole is from the south. True knowledge of religion breaks down the barriers between faith and faith and gives rise to tolerance. Cultivation of tolerance for other faiths will impart to us a truer understanding of our own.
+For me the different religions are beautiful flowers from the same garden, or they are branches of the same majestic tree. Therefore they are equally true, though being received and interpreted through human instruments equally imperfect.
+The Allah of Islam is the same as the God of Christians and the Ishwara of Hindus. Even as there are numerous names of God in Hinduism, there are as many names of God in Islam. The names do not indicate individuality but attributes, and little man had tried in his humble way to describe mighty God by giving Him attributes, though He is above all attributes, Indescribable, Inconceivable, Immeasurable. Living faith in this God means acceptance of the brotherhood of mankind. It also means equal respect for all religions.
+My life is my message.
+You assist an unjust administration most effectively by obeying its orders and decrees. An evil administration never deserves such allegiance. Allegiance to it means partaking of the evil. A good person will resist an evil system with his whole soul. Disobedience of the laws of an evil state is therefore a duty.
+All humanity is one undivided and indivisible family, and each one of us is responsible for the misdeeds of all the others. I cannot detach myself from the wickedest soul.[citation needed]
+Remember that there is always a limit to self-indulgence but none to self-restraint, and let us daily progress in that direction.
+There is no doubt in my mind that in the majority of quarrels the Hindus come out second best. But my own experience confirms the opinion that the Mussalman as a rule is a bully and the Hindu as a rule is a coward. I have noticed this in railway trains, on public roads, and in the quarrels which I had the privilege of settling. Need the Hindu blame the Mussalman for his cowardice? Where there are cowards, there will always be bullies…But I, as a Hindu, am more ashamed of Hindu cowardice than I am angry at the Mussalman bullying…
+During my travels, I find a general belief that to turn a Christian is to turn European; to become self-willed, and give up self-restraint, use only foreign cloth, dress oneself in European style and start taking meat and brandy. But I think the fact is, if a person discards his country, his customs and his old connections and manners when he changes his religion, he becomes all the more unfit to gain a knowledge of God. For, a change of religion means really a conversion of the heart. When there is a real conversion, a man’s heart grows. But in this country one finds that conversion brings about deep disdain for one’s old religion and its followers, i.e., one’s old friends and relatives. The next change that takes place is that of dress and manners and behaviour. All that does great harm to the country.
+If I had power and could legislate, I should certainly stop all proselytising. It is the cause of much avoidable conflict between classes and unnecessary heart-burning among the missionaries… In Hindu households the advent of a missionary has meant the disruption of the family coming in the wake of change of dress, manners, language, food and drink. … The other day a missionary descended on a famine area with money in his pocket, distributed it among the famine-stricken, converted them to his fold, took charge of their temple and demolished it. This is outrageous. The temple could not belong to the converted, and it could not belong to the Christian missionary. But this friend goes and gets it demolished at the hands of the very men who only a little while ago believed that God was there.
+Conversion in the sense of self-purification, self-realization, is the crying need of the hour. That, however, is not what is meant by proselytising. To those who would convert India, might it not be said, ‘physician heal thyself’?
+It is no use trying to fight these forces [of materialism] without giving up the idea of conversion, which I assure you is the deadliest poison which ever sapped the fountain of truth.
+I know of no one who has done more for humanity than Jesus. In fact, there is nothing wrong with Christianity … The trouble is with you Christians. You do not begin to live up to your own teachings.

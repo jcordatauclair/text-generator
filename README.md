@@ -25,6 +25,10 @@
 
 ## **Overview**
 
+**[GenIt](https://github.com/jcordatauclair/text-generator)** is a command line tool that allows you to generate word sequences through machine learning on any text. So you can have fun creating improbable tweets that Donald Trump could have written or inventing crazy quotes from the famous Oscar Wilde. _There is no limit!_
+
+Currently, it is possible to collect subreddit's titles from [Reddit](), tweets from [Twitter](), quotes from [Wikiquotes]() and movies titles from [IMDb](). Local files are also supported if you want to experiment by yourself.
+
 ## **How to use**
 
 packages needed
