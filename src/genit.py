@@ -1,6 +1,8 @@
 #! usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# GenIt : v0.3
+
 # IMPORTS ---------------------------------------------------------------------#
 import praw                         # https://praw.readthedocs.io/en/latest/
 import prawcore                     # https://pypi.org/project/prawcore/
@@ -10,6 +12,7 @@ import imdb                         # https://media.readthedocs.org/pdf/imdbpy/l
 
 from textgenrnn import textgenrnn   # https://github.com/minimaxir/textgenrnn
 from tqdm import tqdm               # https://github.com/tqdm/tqdm
+from pyfiglet import Figlet         # https://github.com/pwaller/pyfiglet
 from keras import backend as k
 from shutil import copyfile
 
@@ -50,6 +53,16 @@ info_logo = '[' + bcolors.OKBLUE + '-' + bcolors.END + ']' + ' '
 
 
 # CORE ------------------------------------------------------------------------#
+print(bcolors.ITALIC
+      + bcolors.UNDERLINE
+      + 'v0.3'
+      +bcolors.END)
+
+f = Figlet(font='slant')
+print(bcolors.BOLD
+      + f.renderText('GenIt')
+      + bcolors.END)
+
 # Q : What do you want to generate?
 what_q = 'Select what kind of text you want to generate'
 what_c = ['Reddit posts titles',
@@ -284,7 +297,7 @@ if (what_type == what_c[0]):
         for submission in tqdm(subreddit.top(limit = 1000)):
             f.write(submission.title + '\n')
 elif (what_type == what_c[1]):
-    t = twitter.GetUserTimeline(screen_name = user_name,
+    t = twitter_log.GetUserTimeline(screen_name = user_name,
                                 count = 200)
     tweets = [i.AsDict() for i in t]
     with open('../data/data.txt', 'w+') as f:
