@@ -1,7 +1,5 @@
 <h1 align="center">
   <br>
-  <img src="misc/logo.png" alt="GenIt" width="200"></a>
-  <br>
   <b>GenIt</b>
   <br>
 </h1>
