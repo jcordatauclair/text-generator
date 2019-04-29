@@ -7,8 +7,8 @@
 <h4 align="center">A funny text generator based on <a href="https://github.com/minimaxir/textgenrnn">textgenrnn</a>.</h4>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/project-personal-blue.svg?style=flat-square">
   <img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square">
-  <img src="https://img.shields.io/badge/version-0.2-ff69b4.svg?style=flat-square">
   <img src="https://img.shields.io/badge/made_with-python-yellow.svg?style=flat-square">
 </p>
 
