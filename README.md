@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h4 align="center">A funny text generator based on <a href="https://github.com/minimaxir/textgenrnn">textgenrnn</a>.</h4>
+<h4 align="center">A funny text generator based on <a href="https://github.com/minimaxir/textgenrnn">textgenrnn</a></h4>
 
 <p align="center">
   <img src="https://img.shields.io/badge/project-personal-blue.svg?style=flat-square">
