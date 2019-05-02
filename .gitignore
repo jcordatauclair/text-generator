@@ -1,3 +1,4 @@
 config.py
 __pycache__
 textgenrnn_weights.hdf5
+misc/
